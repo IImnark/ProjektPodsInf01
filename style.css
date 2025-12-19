@@ -1,0 +1,115 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+
+body{
+    background-color: darkslategray;
+}
+header{
+    width: 100%;
+    height: 100px;
+}
+header>div{
+    text-align: center;
+    line-height: 80px;
+}
+h1{
+    color: ghostwhite;
+}
+nav{
+    width: 100%;
+    height: 75px;
+}
+nav>div{
+    text-align: center;
+}
+main>#opis_div>p, main>#opis_div>ul{
+    margin: 10px 0px auto 20px;
+}
+a{
+    color: ghostwhite;
+    font-weight: bold;
+    text-decoration: none;
+    line-height: 55px;
+    margin: auto 10px auto 10px;
+}
+main>div{
+    font-size: 20px;
+    color: ghostwhite;
+}
+a:hover{
+    color: bisque;
+}
+main{
+    width: 100%;
+    height: 450px;
+}
+main>div{
+    text-align: center;
+}
+main>div>img{
+    height: 300px;
+}
+h2, h4{
+    color:cornsilk;
+}
+footer{
+    width: 100%;
+    height: 75px;
+    margin: 0px;
+}
+footer>div{
+    text-align: center;
+    line-height: 55px;
+    color: aquamarine;
+}
+div{
+    background-color: darkslateblue;
+    margin: auto;
+    width: calc(100% - 20px);
+    height: calc(100% - 20px);
+}
+#img_left{
+    vertical-align: middle;
+    margin-right: 20px;
+    height: 55px;
+    transform: rotate(90deg);
+}
+#img_right{
+    vertical-align: middle;
+    margin-left: 20px;
+    height: 55px;
+    transform: rotate(-90deg) scaleX(-1);
+}
+section{
+    flex: 1;
+}
+section>div{
+    color: bisque;
+    text-align: center;
+    font-size: 20px;
+}
+@media (max-width: 800px) {
+    main{
+        flex-direction: column;
+    }
+    section{
+        width: 100%;
+    }
+    img{
+        display: none;
+    }
+    h1{
+        font-size: 18px;
+    }
+    footer{
+        display: none;
+    }
+}
